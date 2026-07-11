@@ -146,12 +146,12 @@ p{text-wrap:pretty;max-width:64ch}
 
 /* ============ HERO ============ */
 .hero{padding-block:clamp(3rem,9vw,7rem)}
-.hero__inner{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.hero__inner{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(2rem,5vw,4rem);align-items:center}
 .hero__title{font-size:var(--text-3xl);letter-spacing:-.02em;margin-bottom:var(--space-6)}
 .hero__lead{font-size:var(--text-lg);color:var(--color-text-muted);max-width:52ch;margin-bottom:var(--space-8);line-height:1.55}
 .hero__actions{display:flex;flex-wrap:wrap;gap:.85rem}
 .hero__emblem{display:grid;place-items:center}
-.hero__photo{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--radius-xl);
+.hero__photo{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:var(--radius-xl);
   box-shadow:0 24px 60px rgba(0,0,0,.28);border:1px solid var(--color-border)}
 
 /* ============ PHOTO BAND ============ */
@@ -381,7 +381,7 @@ a.stat__src:hover{color:var(--color-gold-strong)}
   .menu-btn{display:flex}
   .mobile-nav{display:flex}
   .hero__inner{grid-template-columns:1fr}
-  .hero__emblem{max-width:420px;margin-inline:auto}
+  .hero__emblem{max-width:520px;margin-inline:auto}
   .grid-2{grid-template-columns:1fr}
   .pillars{grid-template-columns:1fr 1fr}
   .modules{grid-template-columns:1fr 1fr}
