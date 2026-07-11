@@ -311,6 +311,24 @@ a.stat__src:hover{color:var(--color-gold-strong)}
 .step p{font-size:var(--text-sm);color:var(--color-text-muted);max-width:none;line-height:1.5}
 .steps + .contact-actions{margin-top:var(--space-6)}
 
+/* ============ FAQ ============ */
+.container--narrow{max-width:760px}
+.faq{margin-top:clamp(2rem,4vw,3rem);border-top:1px solid var(--color-border)}
+.faq__item{border-bottom:1px solid var(--color-border)}
+.faq__item summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;
+  gap:1rem;padding:1.1rem 0;font-family:var(--font-display);font-weight:600;font-size:var(--text-base);
+  color:var(--color-ink)}
+.faq__item summary::-webkit-details-marker{display:none}
+.faq__item summary::after{content:"+";font-family:var(--font-display);font-weight:700;font-size:1.4rem;
+  line-height:1;color:var(--color-gold-strong);transition:transform var(--transition)}
+[data-theme='dark'] .faq__item summary::after{color:var(--color-gold)}
+.faq__item[open] summary::after{content:"–"}
+.faq__item summary:hover{color:var(--color-gold-strong)}
+[data-theme='dark'] .faq__item summary:hover{color:var(--color-gold)}
+.faq__item p{font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.6;
+  max-width:64ch;padding:0 0 1.2rem}
+.faq + .contact-actions{margin-top:var(--space-6)}
+
 /* ============ CTA PANEL ============ */
 .cta-panel{background:var(--color-always-dark);border-radius:var(--radius-xl);
   display:grid;grid-template-columns:1.4fr .6fr;overflow:hidden;color:var(--color-on-dark)}
