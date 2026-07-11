@@ -252,7 +252,7 @@ p{text-wrap:pretty;max-width:64ch}
 .module__theme{font-size:var(--text-sm);color:var(--color-text-muted);max-width:none}
 
 /* ============ IMPACT ============ */
-.impact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:clamp(2rem,4vw,3rem)}
+.impact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-top:clamp(2rem,4vw,3rem)}
 .stat{border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:var(--space-6);background:var(--color-surface-2)}
 [data-theme='dark'] .stat{background:var(--color-surface)}
 .stat__num{display:block;font-family:var(--font-display);font-weight:800;
@@ -386,7 +386,7 @@ a.stat__src:hover{color:var(--color-gold-strong)}
   .pillars{grid-template-columns:1fr 1fr}
   .modules{grid-template-columns:1fr 1fr}
   .voices{grid-template-columns:1fr}
-  .impact-grid{grid-template-columns:1fr}
+  .impact-grid{grid-template-columns:1fr 1fr}
   .partners{grid-template-columns:1fr 1fr}
   .tiers{grid-template-columns:1fr 1fr}
   .steps{grid-template-columns:1fr}
@@ -396,7 +396,7 @@ a.stat__src:hover{color:var(--color-gold-strong)}
   .cta-panel__aside{min-height:220px;order:-1}
 }
 @media (max-width:560px){
-  .pillars,.modules,.partners,.facts,.tiers,.values__list{grid-template-columns:1fr}
+  .pillars,.modules,.partners,.facts,.tiers,.values__list,.impact-grid{grid-template-columns:1fr}
   .photo-band{grid-template-columns:1fr 1fr}
   .photo-band__item--tall{grid-column:span 2}
   .photo-band__item--tall img{aspect-ratio:16/9}

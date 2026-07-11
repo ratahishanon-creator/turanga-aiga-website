@@ -98,7 +98,7 @@ const MODULES = [
   const run = (el) => {
     const target = parseInt(el.dataset.count, 10);
     const suffix = el.dataset.suffix || '';
-    const dur = 1400;
+    const dur = 2600;
     const start = performance.now();
     const step = (now) => {
       const p = Math.min((now - start) / dur, 1);
