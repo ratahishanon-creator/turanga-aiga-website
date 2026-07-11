@@ -328,7 +328,7 @@ a.stat__src:hover{color:var(--color-gold-strong)}
 .footer__nav a{font-size:var(--text-sm);color:var(--color-text-muted)}
 .footer__nav a:hover{color:var(--color-gold-strong)}
 [data-theme='dark'] .footer__nav a:hover{color:var(--color-gold)}
-.footer__social{display:flex;gap:.75rem}
+.footer__social{display:flex;flex-wrap:wrap;gap:.75rem}
 .social-link{display:inline-flex;align-items:center;gap:.5rem;font-size:var(--text-sm);
   color:var(--color-text-muted);padding:.5rem .85rem;border:1px solid var(--color-border);
   border-radius:var(--radius-full);transition:color var(--transition),border-color var(--transition)}
