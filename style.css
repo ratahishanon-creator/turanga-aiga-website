@@ -258,6 +258,8 @@ p{text-wrap:pretty;max-width:64ch}
 
 /* ============ IMPACT ============ */
 .impact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-top:clamp(2rem,4vw,3rem)}
+.impact-banner{margin-top:clamp(1.75rem,4vw,2.75rem);border-radius:var(--radius-xl);overflow:hidden;line-height:0}
+.impact-banner img{width:100%;height:clamp(200px,32vw,360px);object-fit:cover;display:block}
 .stat{border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:var(--space-6);background:var(--color-surface-2)}
 [data-theme='dark'] .stat{background:var(--color-surface)}
 .stat__num{display:block;font-family:var(--font-display);font-weight:800;
