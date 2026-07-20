@@ -147,6 +147,7 @@ p{text-wrap:pretty;max-width:64ch}
 /* ============ HERO ============ */
 .hero{padding-block:clamp(3rem,9vw,7rem)}
 .hero__inner{display:grid;grid-template-columns:1.55fr .7fr;gap:clamp(1.5rem,3vw,2.5rem);align-items:start}
+.hero__eyebrow{margin-bottom:var(--space-4)}
 .hero__title{font-size:clamp(4rem, 1.5rem + 9vw, 9rem);line-height:.88;letter-spacing:-.045em;margin-bottom:var(--space-3)}
 .hero__reo{font-family:var(--font-body);font-style:italic;font-size:var(--text-xl,1.35rem);color:var(--color-gold);letter-spacing:.01em;margin-bottom:var(--space-6)}
 [data-theme='dark'] .hero__reo{color:var(--color-gold)}
