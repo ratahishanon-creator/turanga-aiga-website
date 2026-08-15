@@ -442,3 +442,63 @@ a.stat__src:hover{color:var(--color-gold-strong)}
   .day li{flex-direction:row;align-items:flex-start}
   .footer__inner{flex-direction:column;align-items:flex-start}
 }
+
+/* ============ REFER (self referral) ============ */
+.refer{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin:clamp(1.75rem,4vw,2.5rem) 0 clamp(2rem,4vw,3rem)}
+.refer__card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);
+  padding:var(--space-6);display:flex;flex-direction:column;gap:.75rem;align-items:flex-start;
+  transition:transform var(--transition),border-color var(--transition),box-shadow var(--transition)}
+.refer__card:hover{transform:translateY(-4px);border-color:var(--color-gold-soft);box-shadow:0 14px 34px rgba(0,0,0,.08)}
+.refer__card--feature{border-color:var(--color-gold);box-shadow:0 10px 30px rgba(183,138,46,.14)}
+.refer__tag{font-size:var(--text-xs,.78rem);font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--color-gold-strong)}
+[data-theme='dark'] .refer__tag{color:var(--color-gold)}
+.refer__title{font-size:var(--text-lg,1.3rem);color:var(--color-ink)}
+.refer__desc{color:var(--color-text-muted);font-size:var(--text-base);margin-bottom:.35rem}
+.refer__card .btn{margin-top:auto}
+
+/* ============ PATHWAYS (tabs) ============ */
+.pathways{margin-top:clamp(1.75rem,4vw,2.5rem)}
+.pathways__tabs{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.5rem}
+.pathways__tab{font-family:var(--font-body);font-size:var(--text-base);font-weight:600;
+  color:var(--color-text-muted);background:var(--color-surface);border:1px solid var(--color-border);
+  border-radius:999px;padding:.7rem 1.4rem;cursor:pointer;transition:all var(--transition)}
+.pathways__tab:hover{color:var(--color-ink);border-color:var(--color-gold-soft)}
+.pathways__tab.is-active{background:var(--color-gold);color:#16130e;border-color:var(--color-gold);
+  box-shadow:0 4px 18px rgba(183,138,46,.28)}
+.pathways__panel{display:none;animation:fadeIn .35s ease}
+.pathways__panel.is-active{display:block}
+.pathways__body{background:var(--color-surface);border:1px solid var(--color-border);
+  border-radius:var(--radius-lg);padding:clamp(1.6rem,4vw,2.75rem);max-width:760px}
+.pathways__name{font-size:clamp(1.4rem,3vw,1.9rem);color:var(--color-ink);margin-bottom:.85rem}
+.pathways__desc{color:var(--color-text-muted);font-size:var(--text-base);margin-bottom:1.25rem}
+.pathways__facts{list-style:none;display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:1.5rem;padding:0}
+.pathways__facts li{font-size:var(--text-sm);font-weight:600;color:var(--color-ink);
+  background:var(--color-surface-2);border:1px solid var(--color-border);border-radius:999px;padding:.45rem 1rem}
+.pathways__actions{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+/* ============ HAUORA / SELF CARE ============ */
+.hauora-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;
+  margin:clamp(1.75rem,4vw,2.5rem) 0 clamp(1.75rem,4vw,2.5rem)}
+.hauora-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);
+  border-radius:var(--radius-lg);padding:var(--space-6);transition:transform var(--transition),border-color var(--transition)}
+.hauora-card:hover{transform:translateY(-4px);border-color:var(--color-gold)}
+.hauora-card__icon{font-size:1.9rem;margin-bottom:.6rem;line-height:1}
+.hauora-card h3{font-size:var(--text-base);color:var(--color-on-dark);margin-bottom:.5rem}
+.hauora-card p{color:#c9c2b2;font-size:var(--text-sm)}
+.hauora-practices{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);
+  border-radius:var(--radius-lg);padding:clamp(1.6rem,4vw,2.5rem)}
+.hauora-practices__title{font-size:clamp(1.2rem,2.6vw,1.5rem);color:var(--color-on-dark);margin-bottom:1.25rem}
+.hauora-practices__list{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:.85rem 2rem;padding:0}
+.hauora-practices__list li{position:relative;padding-left:1.6rem;color:#d7d0c1;font-size:var(--text-base)}
+.hauora-practices__list li::before{content:"";position:absolute;left:0;top:.55em;width:.55rem;height:.55rem;
+  border-radius:50%;background:var(--color-gold)}
+
+@media (max-width:900px){
+  .refer{grid-template-columns:1fr}
+  .hauora-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:560px){
+  .hauora-grid{grid-template-columns:1fr}
+  .hauora-practices__list{grid-template-columns:1fr}
+}

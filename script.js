@@ -128,3 +128,23 @@ const MODULES = [
 
 /* ===== Year ===== */
 document.getElementById('year').textContent = new Date().getFullYear();
+
+/* ===== Pathways tabs ===== */
+(function () {
+  const tabs = document.querySelectorAll('.pathways__tab');
+  if (!tabs.length) return;
+  const panels = document.querySelectorAll('.pathways__panel');
+  function activate(name) {
+    tabs.forEach((t) => {
+      const on = t.dataset.tab === name;
+      t.classList.toggle('is-active', on);
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
+    panels.forEach((p) => {
+      const on = p.id === 'tab-' + name;
+      p.classList.toggle('is-active', on);
+      if (on) { p.hidden = false; } else { p.hidden = true; }
+    });
+  }
+  tabs.forEach((t) => t.addEventListener('click', () => activate(t.dataset.tab)));
+})();
